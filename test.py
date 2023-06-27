@@ -4,7 +4,13 @@ from time import sleep
 import luoshu_python_sdk
 import asyncio
 
-luoshu = luoshu_python_sdk.Luoshu("default", "test", "127.0.0.1", 8000)
+luoshu = luoshu_python_sdk.Luoshu(
+    "default",
+    "test",
+    "127.0.0.1",
+    8000,
+    "192.168.110.103",
+)
 
 
 # luoshu.config_subscribe("default|test", lambda x: print(x))
